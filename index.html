@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <title>Registration form</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -15,29 +15,31 @@
   <section class="max-length gutter pad-t-2 pad-b-2">
     <div>
       <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     </div>
-    <form action="sam-le68.github.io/registraion-form" method="post">
+    <form action="sam-le68.github.io/lamanhmj@gmail.com" method="post">
       <div>
         <div>
-          <fieldset><legend class="italic">Personal details</legend></fieldset>
+          <fieldset>
+            <legend class="mega italic">Personal details</legend>
+          </fieldset>
         </div>
         <div class="grid">
-          <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
+          <div class="padtoleft unit xs-1 s-1 m-1-2 l-1-2 push">
             <label for="name">Name</label>
             <input id="name" name="name" required>
           </div>
-          <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
+          <div class="padtoright unit xs-1 s-1 m-1-2 l-1-2 push">
             <label for="age">Age</label>
             <input id="age" type="number" name="age" required>
           </div>
         </div>
         <div class="grid">
           <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
-            <label for="email">Email</label>
+            <label for="padtoleft email">Email</label>
             <input id="email" type="email" name="email" required>
           </div>
-          <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
+          <div class="padtoright unit xs-1 s-1 m-1-2 l-1-2 push">
             <label for="fitness">Physical fitness</label>
             <select id="fitness" name="fitness">
               <option>Super-human</option>
@@ -53,12 +55,14 @@
         </div>
       </div>
       <div class="push">
-        <fieldset><legend class="push italic">Mission statement</legend></fieldset>
+        <fieldset>
+          <legend class="push italic">Mission statement</legend>
+        </fieldset>
         <label for="reason">Why do you want to go to Mars?</label>
         <input type="hidden" value="Request to join the mission"><textarea id="reason" name="reason"></textarea>
       </div>
       <div class="text-center push-2">
-        <button type="submit">Register for the trip!</button>
+        <button class="btn" type="submit">Register for the trip!</button>
       </div>
     </form>
   </section>
