@@ -11,27 +11,29 @@
 </head>
 <body>
 
-  <section class="gutter">
-    <div class="">
+  <section class="max-length gutter">
+    <div>
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     </div>
-      <form class="" action="index.html" method="post">
-      <div class="">
-        <fieldset><legend>Personal details</legend></fieldset>
-        <div class="">
+    <form action="sam-le68.github.io/registraion-form" method="post">
+      <div class="grid">
+        <div class="xs-1 s-1 m-1 l-1">
+          <fieldset><legend class="italic">Personal details</legend></fieldset>
+        </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
           <label for="name">Name</label>
           <input id="name" name="name" required>
         </div>
-        <div class="">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
           <label for="age">Age</label>
           <input id="age" type="number" name="age" required>
         </div>
-        <div class="">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
           <label for="email">Email</label>
           <input id="email" type="email" name="email" required>
         </div>
-        <div class="">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
           <label for="fitness">Physical fitness</label>
           <select id="fitness" name="fitness">
             <option>Super-human</option>
@@ -40,17 +42,17 @@
             <option>A little couch-potato-y</option>
           </select>
         </div>
-        <div class="">
+        <div class="unit xs-1 s-1 m-1 l-1 push">
           <label for="address">Address</label>
           <textarea id="address" name="address"></textarea>
         </div>
       </div>
-      <div class="">
-        <fieldset><legend>Mission statement</legend><fieldset>
+      <div class="push">
+        <fieldset><legend class="push italic">Mission statement</legend></fieldset>
         <label for="reason">Why do you want to go to Mars?</label>
         <textarea id="reason" name="reason"></textarea>
       </div>
-      <div class="">
+      <div class="text-center push-2">
         <button type="submit">Register for the trip!</button>
       </div>
     </form>
